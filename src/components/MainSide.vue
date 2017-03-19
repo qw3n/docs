@@ -96,6 +96,7 @@
               { href: '/components/cards', title: 'Cards' },
               { href: '/components/carousel', title: 'Carousel' },
               { href: '/components/chips', title: 'Chips', action: 'arrow_upward' },
+              { href: '/components/datatables', title: 'Datatables', action: 'fiber_new' },
               { href: '/components/dividers', title: 'Dividers', action: 'fiber_new' },
               { href: '/components/expansion-panel', title: 'Expansion Panel' },
               { href: '/components/footer', title: 'Footer' },
