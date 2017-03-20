@@ -18,7 +18,9 @@
         |   success: $green.base
         |}
       section-text You can modify any of these properties by typing <code>$theme.attribute</code>. If you want to use a built in color, pick a color from the <router-link to="/css/colors">Colors</router-link> section and update the variable.
-      whats-next(text="Layouts") What's happening next?
+
+    section
+      whats-next(route="/layout/examples" text="Layouts") Now that you have all the tools needed to build your next awesome application, head over to the layouts section to choose a ui.
 </template>
 
 <script>
