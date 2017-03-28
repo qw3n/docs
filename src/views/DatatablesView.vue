@@ -1,30 +1,43 @@
 <template lang="pug">
-  v-datatable(v-bind:items="items" v-bind:headers="headers")
-    template(slot="items" scope="props")
-      tr
-        td
-          v-checkbox(v-model="props.item.value" primary)
-        td {{ props.item.name }}
-        td {{ props.item.calories }}
-        td {{ props.item.fat }}
-        td {{ props.item.carbs }}
-        td {{ props.item.protein }}
-        td {{ props.item.sodium }}
-        td {{ props.item.calcium }}
-        td {{ props.item.iron }}
+  v-card.my-5
+    v-card-row
+      v-card-title Nutrition
+        v-spacer
+        v-icon.mr-3 filter_list
+        v-icon more_vert
+    v-datatable(
+      v-bind:items="items"
+      v-bind:headers="headers"
+      v-model="table"
+    )
+      template(slot="headers" scope="props")
+        span(v-if="props.item") {{ props.item }}
+      template(slot="items" scope="props")
+        tr(v-bind:class="[props.item.value ? 'active' : '']")
+          td
+            v-checkbox(v-model="props.item.value" primary)
+          td {{ props.item.name }}
+          td {{ props.item.calories }}
+          td {{ props.item.fat }}
+          td {{ props.item.carbs }}
+          td {{ props.item.protein }}
+          td {{ props.item.sodium }}
+          td {{ props.item.calcium }}
+          td {{ props.item.iron }}
 </template>
 
 <script>
   export default {
     data () {
       return {
+        table: null,
         doc: {
           title: 'Datatables',
           desc: ``,
           props: {
           }
         },
-        headers: ['', 'Dessert (100g serving)', 'Calories', 'Fat (g)', 'Carbs (g)', 'Protein (g)', 'Sodium (mg)', 'Calcium (%)', 'Iron (%)'],
+        headers: ['Dessert (100g serving)', 'Calories', 'Fat (g)', 'Carbs (g)', 'Protein (g)', 'Sodium (mg)', 'Calcium (%)', 'Iron (%)'],
         items: [
           {
             value: false,
