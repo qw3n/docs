@@ -13,7 +13,7 @@
         timeout: 6000,
         doc: {
           title: 'Snackbar',
-          desc: 'The <code>v-snackbar</code> component is used to display a quick message to a user. Toasts support positioning, removal delay and callbacks.',
+          desc: 'The <code>v-snackbar</code> component is used to display a quick message to a user. Snackbars support positioning, removal delay and callbacks.',
           props: {
             'v-snackbar': {
               params: [
