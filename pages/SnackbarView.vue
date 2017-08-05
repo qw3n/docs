@@ -62,6 +62,12 @@
                   'Time to wait until snackbar is automatically hidden'
                 ],
                 [
+                  'timeoutFn',
+                  'Function',
+                  '() => {}',
+                  'Called when a snackbar automatically times out'
+                ],
+                [
                   'vertical',
                   'Boolean',
                   'False',
