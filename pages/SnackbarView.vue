@@ -13,7 +13,7 @@
           desc: 'The <code>v-snackbar</code> component is used to display a quick message to a user. Snackbars support positioning, removal delay and callbacks.',
           examples: [
             { header: 'Position', file: 'snackbars/1', desc: 'The standard snackbar is useful for calling attention to some function that has just happened.'},
-            { header: 'Contextual', file: 'snackbars/2', desc: 'You can also contextually color the snackbar to better fit your implementation.'}
+            { header: 'Contextual', file: 'snackbars/2', desc: 'You can also contextually color the snackbar to better fit your implementation.'},
             { header: 'Timeout Function', file: 'snackbars/3', desc: 'You can use snackbars to allow users to undo a particular action. The timeout function will complete the action if the user doesn't intervene.'}
           ],
           props: {
